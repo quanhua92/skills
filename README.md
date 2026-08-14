@@ -1,55 +1,56 @@
-# Claude Skills Marketplace
+# Agent Skills
 
-Collection of custom plugins and skills for Claude Code.
+Collection of portable agent skills following the [Agent Skills](https://agentskills.io) open standard. Works with Claude Code, Cursor, GitHub Copilot, Codex, Antigravity, and any agent supporting the Skills standard.
 
-## Plugins
+## Available Skills
 
-### [github-tools](./plugins/github-tools/)
+### [`thinker`](./skills/thinker/)
 
-Tools for working with GitHub PRs, issues, and code reviews.
+Socratic mastery partner for deep technical understanding through questions and challenges.
 
-**Skills:**
-- **pr-reader** - Extract and organize GitHub PR review comments into prioritized action plans
+- **What it does:** Converts the agent into a question-only partner that never writes answers, summaries, or explanations for you.
+- **Triggers:** "think with me about", "mastery mode", "question me on", "grill me on [component]"
 
-**Usage:** "Read PR #1 comments" → Automatically extracts, organizes, and fixes review feedback systematically.
+```bash
+npx skills add quanhua92/skills --skill thinker
+```
+
+---
+
+### [`pr-reader`](./skills/pr-reader/)
+
+Extract and organize GitHub PR review comments into prioritized action plans.
+
+- **What it does:** Extracts review comments via `gh` CLI, sorts by severity/difficulty, and creates a systematic fix list.
+- **Triggers:** "read PR #X comments", "extract review feedback", "parse PR #X"
+
+```bash
+npx skills add quanhua92/skills --skill pr-reader
+```
+
+---
 
 ## Installation
 
-### Quick Install
-
-Add the marketplace and install plugins:
-
+### Add all skills
 ```bash
-/plugin marketplace add quanhua92/claude-skills
+npx skills add quanhua92/skills
 ```
 
+### Add a single skill
 ```bash
-/plugin install github-tools@quanhua92-claude-skills
+npx skills add quanhua92/skills --skill thinker
 ```
-
-Then restart Claude Code to load the skills.
-
-### Manual Install
-
-1. Clone this repository to your local machine
-2. Add to your Claude Code plugins configuration
-3. Restart Claude Code
 
 ## Structure
 
-```
-claude-skills/
-├── .claude-plugin/
-│   └── marketplace.json       # Marketplace configuration
-├── plugins/
-│   └── github-tools/
-│       ├── .claude-plugin/
-│       │   └── plugin.json
-│       ├── skills/
-│       │   └── pr-reader/
-│       │       └── SKILL.md
-│       ├── parse_comments.py
-│       └── README.md
+```text
+skills/
+├── skills/
+│   ├── pr-reader/
+│   │   └── SKILL.md
+│   └── thinker/
+│       └── SKILL.md
 └── README.md
 ```
 
