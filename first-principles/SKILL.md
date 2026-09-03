@@ -1,11 +1,17 @@
 ---
 name: first-principles
-description: "Apply first-principles thinking to problems with the D.A.R.E. prompt chain: decompose the problem, audit inherited assumptions, recombine verified building blocks, and run cheap experiments against reality. Use when the user wants clearer reasoning, unconventional solutions, or structured AI-assisted problem solving."
+description: >
+  Apply first-principles thinking with the D.A.R.E. sequence: decompose
+  the problem, audit inherited assumptions, recombine surviving building
+  blocks, and test them against reality. Use when the problem framing,
+  requirements, constraints, or conventional solution may rest on
+  assumptions that should be reconstructed from fundamentals, or when
+  the user explicitly requests first-principles reasoning.
 ---
 
 # First-Principles Thinking
 
-Use first-principles thinking to replace inherited stories and conventions with a model of what is actually known, then rebuild and test from there. The objective is not to be right every time; it is to learn quickly why an idea is wrong or right. AI does the analytical work and shows its work. The user remains the decision maker and keeps the judgment.
+Use first-principles thinking to replace inherited stories and conventions with a model of what is actually known, then rebuild and test from there. The objective is not to be right every time; it is to learn quickly why an idea is wrong or right. AI performs the analysis while making the result inspectable: evidence, assumptions, uncertainty, dependencies, and decision criteria should be explicit. The user remains the decision maker and keeps the judgment.
 
 ## The D.A.R.E. framework
 
