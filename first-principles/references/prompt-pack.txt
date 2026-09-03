@@ -1,0 +1,135 @@
+Prompt Pack First Principles Thinking
+
+The D. A. R. E. Framework
+
+In this video, I talk about First Principles Thinking and how to use AI to implement the First
+
+Principles Thinking.
+
+I call the framework D. A. R. E.
+
+It is a four-step prompt chain that forces the model to break the problem down, challenge
+
+inherited assumptions, rebuild from what remains, and test the result against reality.
+
+●  D — Decompose the problem.
+
+●  A — Audit assumptions.
+
+●  R — Recombine facts.
+
+●  E — Experiment against reality.
+
+Every prompt below uses a structure from one of our videos called AIM: Actor. Input. Mission.
+
+D: Decompose
+
+“Act as a world-class ﬁrst-principles analyst. Your job in this step is decomposition only. You are
+
+penalized for introducing advice, solutions, assumptions, or standard playbooks. Be my thought
+
+partner. Do not suck up to me.
+
+I want to understand exactly what this problem is made of. My problem is: [INSERT PROBLEM]. If
+
+the stated problem appears to contain a hidden objective or a deeper question, identify it in one
+
+sentence before decomposing. Ask whether I want you to decompose the original problem or the
+
+deeper one. Do not continue until I choose. Do not silently replace or reframe my problem.
+
+Break the problem into its smallest useful constituent parts. Show the hierarchy clearly: the overall
+
+problem, its major components, and the smaller elements inside each component. Use only
+
+dimensions that are relevant, such as people, process steps, time, resources, costs, etc. For each
+
+component, brieﬂy explain what it contains and how it connects to the larger problem. Stop
+
+decomposing when breaking a component down further would no longer improve understanding
+
+or make it easier to examine.”
+
+Do not evaluate the components. Do not classify them as facts or assumptions. Do not
+
+recommend solutions. Only show me what parts the problem is made of.
+
+A: Audit
+
+“Act as a skeptical red team analyst whose only job is to uncover and question inherited
+
+assumptions. Assume that every "obvious" part of the problem may be hiding a convention until
+
+evidence proves otherwise.
+
+I want to know which of the building blocks above are load-bearing assumptions, not facts, and
+
+what becomes possible if they're wrong.
+
+Review the blocks from the previous step. Give me a numbered list of the assumptions hiding in
+
+them. For each one, on its own line, name the assumption. Classify whether it's a fact, convention,
+
+or unknown based on the evidence available. Verify the evidence. State what breaks, or what
+
+opens up, if I eliminate it; and state what changes if I invert it. Order the list from most
+
+load-bearing assumption to least.”
+
+R: Recombine
+
+“Act as an architect designing with no memory of how this problem has been solved before. The
+
+standard playbook is unavailable to you. Your only materials are the veriﬁed building blocks that
+
+survived the audit.
+
+I want new solutions assembled from those building blocks — not fresh ideas pulled from how it's
+
+normally done, and not variations on the standard answer.
+
+Take the building blocks that survived the audit. Recombine them — rearrange, connect, and stack
+
+these same elements into new conﬁgurations, the way the same musical notes can be arranged
+
+into different songs. Produce 3 solutions that each use only these veriﬁed blocks and differ from
+
+each other in their underlying structure, not just their details. For each solution: name which
+
+building blocks it's built from, which discarded convention it refuses to obey, and its single biggest
+
+point of failure. Do not introduce any new building block unless you label it clearly as a new
+
+assumption.”
+
+E: Experiment
+
+“Act as a skeptical experimenter. Your job is to help me design the cheapest, fastest way to ﬁnd
+
+out whether this holds up BEFORE it costs me anything real in time, money, effort, or reputation.
+
+Don't try to sell me the idea. Give me a test I could actually run, and the pass/fail lines to read it by.
+
+I want the smallest real-world test that helps me understand what parts work and what parts don't,
+
+as early and as cheaply as possible.
+
+Take the 3 solutions from the previous step and design experiments to test whether they'll work in
+
+the real world. Design the smallest concrete test for each. For instance, what to actually do, who
+
+to talk to, or what to build, using the least time, money, effort, or social risk the problem allows. For
+
+each test, tell me what result would rule that solution out, what result would keep it alive, and what
+
+I'd learn about the problem either way. Give me your view on which building block to revisit if all of
+
+the tests fail.”
+
+This is just to get you started. This is just one way to prompt, not the only way. You should use
+
+your judgement, your taste, and your AI model to improve upon these prompts and make them
+
+your own.
+
+

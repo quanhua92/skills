@@ -4,7 +4,7 @@ Collection of portable agent skills following the [Agent Skills](https://agentsk
 
 ## Available Skills
 
-### [`thinker`](./skills/thinker/)
+### [`thinker`](./thinker/)
 
 Socratic mastery partner for deep technical understanding through questions and challenges.
 
@@ -17,7 +17,7 @@ npx skills add quanhua92/skills --skill thinker
 
 ---
 
-### [`pr-reader`](./skills/pr-reader/)
+### [`pr-reader`](./pr-reader/)
 
 Extract and organize GitHub PR review comments into prioritized action plans.
 
@@ -26,6 +26,19 @@ Extract and organize GitHub PR review comments into prioritized action plans.
 
 ```bash
 npx skills add quanhua92/skills --skill pr-reader
+```
+
+---
+
+### [`first-principles`](./first-principles/)
+
+Structured first-principles thinking with the D.A.R.E. prompt chain (Decompose, Audit, Recombine, Experiment).
+
+- **What it does:** Deconstructs problems to root truths, questions inherited assumptions, recombines verified building blocks, and designs cheap real-world tests.
+- **Triggers:** "first-principles", "first principles thinking", "D.A.R.E.", "decompose the problem", "audit assumptions"
+
+```bash
+npx skills add quanhua92/skills --skill first-principles
 ```
 
 ---
@@ -46,11 +59,15 @@ npx skills add quanhua92/skills --skill thinker
 
 ```text
 skills/
-├── skills/
-│   ├── pr-reader/
-│   │   └── SKILL.md
-│   └── thinker/
-│       └── SKILL.md
+├── first-principles/
+│   ├── references/
+│   │   ├── prompt-pack.txt
+│   │   └── transcripts.txt
+│   └── SKILL.md
+├── pr-reader/
+│   └── SKILL.md
+├── thinker/
+│   └── SKILL.md
 └── README.md
 ```
 
